@@ -1,0 +1,17 @@
+{
+  "name": "dailyroutinetracker",
+  "version": "1.0.0",
+  "description": "A simple daily routine tracker",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0",
+    "hbs": "^4.2.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
