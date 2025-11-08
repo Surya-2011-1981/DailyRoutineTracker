@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 require("./db/connection");
 const ScheduleModel = require("./models/routineModel");
+const port = 8000;
 
 const viewPath = path.join(__dirname, "../templates/views");
 const staticPath = path.join(__dirname, "../public");
@@ -71,5 +72,9 @@ app.get("/notSubmitted", (req, res) => {
 app.get("*", (req, res) => {
     res.render("404PageNotFound");
 })
+
+app.listen(port, () => {
+    console.log(`Listening at port ${port}`);
+});
 
 module.exports = app;
